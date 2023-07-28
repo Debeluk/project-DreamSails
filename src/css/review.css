@@ -12,7 +12,25 @@
 img {
         display: block;
         max-width: 100%;
+
+        
 }
+
+/* Mobile */
+@media only screen and (min-width: 375px) {
+    .imageReview {
+        margin-bottom: 18px;
+        background-color: transparent;
+}
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .imageReview {
+    margin-bottom: 24px;
+} 
+}
+
 
 .review {
     background-color: var(--bg-black);
@@ -48,14 +66,6 @@ outline: 2px solid red;
 }
 
 
-.container-review {
-
-}
-
-.review-container-title {
-
-}
-
 /* From general css */
 .visually-hidden {
   position: absolute;
@@ -71,14 +81,25 @@ outline: 2px solid red;
 }
 
 /* Mobile */
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 375px) and (max-width: 767px) {
     .container-paragrafs {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 40px;
         margin-bottom: 40px;
-        width: 335px;
+        
+        
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .container-paragrafs {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 64px;
         
     }
 }
@@ -87,6 +108,7 @@ outline: 2px solid red;
 @media only screen and (min-width:1280px) {
     .container-paragrafs {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         margin-top: 82px;
         margin-bottom: 64px;
@@ -114,6 +136,7 @@ text-align: left;
         margin-right: 0;
         font-size: 16px;
         letter-spacing: -1.08px;
+        
     }
 }
 
@@ -124,22 +147,19 @@ text-align: left;
         margin-bottom: 24px;
         margin-left: 0;
         margin-right: 0;
-        width: 335px;
         font-size: 24px;
         letter-spacing: -1.08px;
+        
     }
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
-    .paragraf-review1 {
-        /* margin-top: 50px; */
-        /* margin-bottom: 32px; */
-        /* margin-left: 0;
-        margin-right: 0; */
-        max-width: 497px;
+    .paragraf-review1 {     
         font-size: 32px;
         letter-spacing: -1.44px;
+        margin-bottom: 32px;
+        max-width: 497px;
     }
 }
 
@@ -169,10 +189,8 @@ text-align: left;
         margin-top: 40px;
         margin-bottom: 24px;
         margin-right: 0;
-        max-width: 280px;
         font-size: 12px;
         letter-spacing: -0.28px;
-        
     }
 }
 
@@ -182,20 +200,21 @@ text-align: left;
         /* margin-bottom: 40px; */
         margin-right: 0;
         margin-left: 0;
-        max-width: 335px;
         font-size: 14px;
         letter-spacing: -0.28px;
+        
     }
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
     .paragraf-review2 {
-        /* margin-bottom: 64px; */
-        max-width: 273px;
         font-size: 16px;
         letter-spacing: -0.32px;
-        
+        max-width: 273px;  
+        display: flex;
+        margin-left: 431px;
+        align-self: stretch;
     }
 }
 
@@ -208,7 +227,6 @@ text-align: left;
         justify-content: center;
         gap: 16px;
         margin-bottom: 14px;
-        max-width: 335px;
     }
 }
 
@@ -216,11 +234,36 @@ text-align: left;
 @media only screen and (min-width: 768px) {
     .list-review {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         gap: 24px 16px;
         margin-bottom: 32px;
     }
 }
+
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+    .list-review {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px 16px;
+        margin-bottom: 32px;
+    }
+}
+
+.item-review {
+    border-radius: 24px;
+    background: var(--cards-color);
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .item-review {
+        
+    }
+}
+
 
 /* Desktop */
 @media only screen and (min-width: 1280px) {
@@ -232,55 +275,27 @@ text-align: left;
         }
 }
 
-.list {
 
-}
 
-/* Small devices */
-@media only screen and (min-width: 320px) {
-    .item-review {
-        max-width: 222px;
-        
-        border-radius: 24px;
-        background: var(--cards-color);
-    }
-}
-
-/* Mobile */
-@media only screen and (min-width: 375px) {
-    .item-review {
-        max-width: 335px;
-    }
-}
-
-/* Tablet */
-@media only screen and (min-width: 768px) {
-    .item-review {
-        max-width: 344px;
-        
-    }
-}
-
-/* Desktop */
-@media only screen and (min-width: 1280px) {
-    .item-review {
-        /* width: calc((100% - 32px) / 3); */
-        max-width: 384px;
-        
-    }
-}
 
 /* Mobile */
 @media only screen and (min-width: 375px) {
 .card-review {
-        padding: 0 24px 24px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 17.5px 24px 17.5px;
     }
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
 .card-review {
-    padding: 0 32px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 16px 16px;
+    padding: 0 12px 24px 12px;
 }
 }
 
@@ -292,18 +307,33 @@ text-align: left;
     font-style: normal;
     font-weight: 500;
     line-height: 110%;
-    letter-spacing: -0.81px;
+    display: flex;
+    
 }
 
-.reviewer-paragraf {
-    color: rgba(246, 245, 239, 0.50);
-    text-align: center;
-    font-family: DM Sans;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
-    letter-spacing: -0.32px;
-    align-self: stretch;
+
+/* Mobile */
+@media only screen and (min-width: 375px) {
+    .reviewer-paragraf {
+        color: rgba(246, 245, 239, 0.50);
+        text-align: center;
+        font-family: DM Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        display: flex;
+        align-self: stretch;
+        letter-spacing: -0.24px;
+        max-width: 300px;
+    }
 }
 
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .reviewer-paragraf {
+        max-width: 320px;
+        font-size: 16px;
+        letter-spacing: -0.32px;
+    }
+}
