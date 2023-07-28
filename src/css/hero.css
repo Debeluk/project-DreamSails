@@ -4,7 +4,7 @@
 .hero-box {
   position: relative;
 }
-.hero-ellipse {
+.hero-ellipse-one {
   position: absolute;
   width: 279px;
   height: 279px;
@@ -13,6 +13,21 @@
   border-radius: 279px;
   opacity: 0.8999999761581421;
   background: #939cac;
+  filter: blur(100px);
+  bottom: 114px;
+  left: -100px;
+}
+.hero-ellipse-two {
+  position: absolute;
+  bottom: 129px;
+  left: -262px;
+  width: 279px;
+  height: 279px;
+  transform: rotate(-44.916deg);
+  flex-shrink: 0;
+  border-radius: 279px;
+  opacity: 0.6000000238418579;
+  background: #91afba;
   filter: blur(100px);
 }
 .hero-container {
@@ -53,6 +68,12 @@
   letter-spacing: -0.28px;
   margin-top: 14px;
   margin-bottom: 24px;
+}
+.hero-btn-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 28px;
 }
 .hero-btn {
   padding: 14px 28px;
