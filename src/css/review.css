@@ -247,17 +247,19 @@ text-align: left;
         flex-wrap: wrap;
         gap: 24px 16px;
         margin-bottom: 32px;
+        justify-content: center;
     }
 }
+
 
 /* Desktop */
 @media only screen and (min-width: 1280px) {
     .list-review {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        gap: 24px 16px;
-        margin-bottom: 32px;
+        gap: 32px;
+        margin-bottom: 64px;
+        justify-content: space-between;
     }
 }
 
@@ -266,21 +268,12 @@ text-align: left;
     background: var(--cards-color);
 }
 
-
-
-
 /* Desktop */
 @media only screen and (min-width: 1280px) {
-        .list-review {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 32px;
-            margin-bottom: 64px;
-        }
+    .item-review {
+        width: 384px;
+    }
 }
-
-
-
 
 /* Mobile */
 @media only screen and (min-width: 375px) {
@@ -297,7 +290,15 @@ text-align: left;
 .card-review {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
+    padding: 0 12px 24px 12px;
+    }
+}
+
+
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+.card-review {
+    
     padding: 0 12px 24px 12px;
     
 
