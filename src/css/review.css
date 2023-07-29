@@ -19,18 +19,28 @@ img {
 /* Mobile */
 @media only screen and (min-width: 375px) {
     .imageReview {
-        margin-bottom: 18px;
-        background-color: transparent;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -16px;
+    margin-bottom: -22px;
 }
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
     .imageReview {
-    margin-bottom: 24px;
+    margin-top: -16px;
+    margin-bottom: -16px;
 } 
 }
 
+/* Desktop */
+@media only screen and (min-width: 768px) {
+    .imageReview {
+        margin-top: -8px;
+    }
+}
 
 .review {
     background-color: var(--bg-black);
@@ -234,7 +244,6 @@ text-align: left;
 @media only screen and (min-width: 768px) {
     .list-review {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         gap: 24px 16px;
         margin-bottom: 32px;
@@ -257,12 +266,7 @@ text-align: left;
     background: var(--cards-color);
 }
 
-/* Tablet */
-@media only screen and (min-width: 768px) {
-    .item-review {
-        
-    }
-}
+
 
 
 /* Desktop */
@@ -293,22 +297,46 @@ text-align: left;
 .card-review {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    gap: 16px 16px;
+    /* flex-wrap: wrap; */
     padding: 0 12px 24px 12px;
+    
+
 }
 }
 
-.reviewer-title {
-    color: var(--main-text-color);
-    text-align: center;
-    font-family: DM Sans;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%;
-    display: flex;
-    
+/* Mobile */
+@media only screen and (min-width: 375px) {
+    .reviewer-title {
+        color: var(--main-text-color);
+        text-align: center;
+        font-family: DM Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
+        display: flex;
+        margin-bottom: 8px;
+        letter-spacing: -0.72px;
+        
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .reviewer-title {
+        color: var(--main-text-color);
+        text-align: center;
+        font-family: DM Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
+        display: flex;
+        margin-bottom: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        letter-spacing: -0.81px;
+    }
 }
 
 
@@ -335,5 +363,6 @@ text-align: left;
         max-width: 320px;
         font-size: 16px;
         letter-spacing: -0.32px;
+        
     }
 }
