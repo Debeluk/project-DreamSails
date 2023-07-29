@@ -57,14 +57,20 @@
 */
 
 :root {
-  font-family: "DM Sans", sans-serif; 
+  font-family: "DM Sans", sans-serif;
 
-  --bg-black: #11131F;   /* Color for background*/
-  --cards-color: #1F212D;  /* Color for yachts and reviews cards*/
-  --main-text-color: #F6F5EF; /* Main text color*/
-  --second-text-color: #f6f5ef80;  /* Darkened main text color*/
-  --button-color: #93ABAE; /* Button bg color*/
-  --button-hover-color: #88B3B9; /* Hovered button bg color*/
+  --bg-black: #11131F;
+  /* Color for background*/
+  --cards-color: #1F212D;
+  /* Color for yachts and reviews cards*/
+  --main-text-color: #F6F5EF;
+  /* Main text color*/
+  --second-text-color: #f6f5ef80;
+  /* Darkened main text color*/
+  --button-color: #93ABAE;
+  /* Button bg color*/
+  --button-hover-color: #88B3B9;
+  /* Hovered button bg color*/
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

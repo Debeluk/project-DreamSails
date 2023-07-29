@@ -1,3 +1,426 @@
 .yachts {
     background-color: var(--bg-black);
 }
+
+
+
+.yahts-section {}
+
+.container {}
+
+.yahts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.yahts-block {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.yahts-list {
+
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.yahts-item {
+    background-color: var(--cards-color);
+    border-radius: 25px;
+
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-left: 0;
+    margin-right: 0;
+
+    width: 335px;
+    margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 768px) and (max-width:1279px) {
+    .yahts-item {
+        margin-bottom: 32px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .yahts-item {
+        max-width: 354px;
+    }
+}
+
+.yahts-title-container {
+    align-items: start;
+    position: relative;
+}
+
+.yaht-title {
+    position: relative;
+    color: var(--main-text-color);
+    font-family: DM Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    /* 39.6px */
+    letter-spacing: -1.62px;
+    max-width: 310px;
+    margin-bottom: 40px;
+    z-index: 99;
+}
+
+@media only screen and (min-width: 768px) {
+
+
+    .yaht-title {
+        font-size: 70px;
+        max-width: 641px;
+        letter-spacing: -3.15px;
+
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+
+
+    .yahts-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .yaht-title {
+        font-size: 100px;
+        max-width: 882px;
+        font-weight: 500;
+        letter-spacing: -4.5px;
+        margin-bottom: 64px;
+        position: relative;
+
+    }
+}
+
+.yaht-title-elipce {}
+
+.yaht-elipce {
+    position: absolute;
+
+    top: -50px;
+    left: -35px;
+
+    width: 230px;
+    height: 230px;
+
+    opacity: 0.6000000238418579;
+    background: #91AFBA;
+    filter: blur(100px);
+
+    flex-shrink: 0;
+
+    z-index: 98;
+}
+
+.yaht-elipce-2 {
+
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 195px;
+    height: 195px;
+
+    flex-shrink: 0;
+    border-radius: 316px;
+    opacity: 0.30000001192092896;
+    background: #A6A9B2;
+    filter: blur(100px);
+
+    z-index: 98;
+}
+
+@media only screen and (min-width: 768px) {
+    .yaht-elipce {
+        width: 399px;
+        height: 399px;
+        left: 0;
+        top: -75px;
+        border-radius: 399px;
+    }
+
+    .yaht-elipce-2 {
+        display: block;
+        width: 304px;
+        height: 304px;
+        top: -80px;
+        right: -20px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .yaht-elipce {
+        width: 414px;
+        height: 414px;
+    }
+
+    .yaht-elipce-2 {
+        width: 316px;
+        height: 316px;
+        top: -40px;
+    }
+}
+
+.yaht-btn {
+    border-radius: 60px;
+    border: 1px solid var(--white, #F6F5EF);
+    padding: 14px 28px;
+    background-color: rgba(246, 245, 239, 0);
+    /* btn text */
+    color: var(--white, #F6F5EF);
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    /* 15.4px */
+    letter-spacing: -0.63px;
+    margin-bottom: 80px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .yaht-btn {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .yaht-btn {
+        margin-bottom: 164px;
+    }
+
+}
+
+.yahts-item-text {
+    display: flex;
+    gap: 144px;
+    margin-bottom: 24px;
+    align-items: center;
+
+}
+
+.yaht-3 .yahts-item-text {
+    gap: 114px;
+}
+
+.yahts-name {
+    color: var(--main-text-color);
+
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 19.2px */
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+
+.yahts-class {
+    color: var(--main-text-color);
+
+    font-family: DM Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118%;
+    /* 14.16px */
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+}
+
+.yahts-item-about-block {
+    display: flex;
+    gap: 32px;
+
+}
+
+.yahts-list-about-name {
+    color: var(--main-text-color);
+
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118%;
+    /* 16.52px */
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+
+
+.yahts-item-about {
+    color: var(--main-text-color);
+
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118%;
+    /* 16.52px */
+    letter-spacing: 0.42px;
+
+
+}
+
+.yahts-item-about:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+.yahts-item-about-name:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+.yahts-card-container {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+}
+
+.yahts-img {
+    width: 90%;
+    height: 251px;
+    margin-bottom: 24px;
+}
+
+.yaht-1 {}
+
+@media only screen and (max-width: 374px) {
+    .yaht-1 {
+        width: 98%
+    }
+}
+
+.yaht-2 {
+    display: none;
+}
+
+.yaht-3 {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .yahts-item {
+        width: 354px;
+    }
+
+    .yahts-list {
+        max-width: 704px;
+        margin: 0 auto;
+    }
+
+
+    .yaht-2 {
+        display: flex;
+    }
+
+    .yahts-img {
+        width: 312px;
+        height: 268px;
+    }
+
+}
+
+.yaht-2 .yahts-item-text {
+    gap: 55px
+}
+
+@media only screen and (min-width: 1280px) {
+    .yahts-item {
+        width: 354px;
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+
+    .yahts-img {
+        width: 322px;
+        height: 268px;
+    }
+
+    .yahts-list {
+        max-width: 1094px;
+        margin: 0 auto;
+        gap: 16px;
+    }
+
+    .yaht-3 {
+        display: flex;
+    }
+}
+
+
+
+.yahts-container {
+    position: relative;
+}
+
+.yacht-list {
+    position: relative;
+    z-index: 99;
+}
+
+.yacht-arrow {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .yacht-arrow {
+        gap: 16px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .yacht-arrow {
+
+        position: absolute;
+        top: 45%;
+        left: -59px;
+        gap: 1116px;
+    }
+}
+
+.arrow-icon-left {
+    border: 1px solid var(--main-text-color);
+    border-radius: 60px;
+    background-color: transparent;
+    padding: 14px;
+}
+
+.arrow-icon-right {
+    border: 1px solid var(--main-text-color);
+    border-radius: 60px;
+    background-color: transparent;
+    padding: 14px;
+}
+
+
+
+/* ???????????????????????? */
+/* .background-lines {
+    position: absolute;
+
+    top: -531px;
+    left: -36px;
+    width: 1508.573px;
+    height: 1611.22px;
+    transform: rotate(2deg);
+    flex-shrink: 0;
+} */
