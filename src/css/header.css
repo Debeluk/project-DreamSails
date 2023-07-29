@@ -19,6 +19,15 @@ nav {
 }
 .header-icon {
   color: var(--main-text-color);
+
+  display: flex;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .logo-icon {
+    width: 24px;
+    height: 24px;
+  }
 }
 .logo-name {
   color: var(--main-text-color);
