@@ -1,3 +1,330 @@
-.review{
-    background-color: var(--bg-black);
+img {
+  display: block;
+  max-width: 100%;
 }
+
+/* Mobile */
+@media only screen and (min-width: 375px) {
+  .imageReview {
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -16px;
+    margin-bottom: -22px;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .imageReview {
+    margin-top: -16px;
+    margin-bottom: -16px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 768px) {
+  .imageReview {
+    margin-top: -8px;
+  }
+}
+
+.review {
+  background-color: var(--bg-black);
+}
+
+/* Mobile */
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 375px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 32px;
+    max-width: 768px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 32px;
+    max-width: 1280px;
+  }
+}
+
+/* Mobile */
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container-paragrafs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .container-paragrafs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 64px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+  .container-paragrafs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 82px;
+    margin-bottom: 64px;
+  }
+}
+
+.paragraf-review1 {
+  color: var(--main-text-color);
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  text-align: left;
+}
+
+/* Small devices */
+@media only screen and (max-width: 319px) {
+  .paragraf-review1 {
+    margin-top: 40px;
+    margin-bottom: 24px;
+    max-width: 280px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 16px;
+    letter-spacing: -1.08px;
+  }
+}
+
+/* Mobile */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .paragraf-review1 {
+    margin-top: 40px;
+    margin-bottom: 24px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 24px;
+    letter-spacing: -1.08px;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .paragraf-review1 {
+    font-size: 32px;
+    letter-spacing: -1.44px;
+    margin-bottom: 32px;
+    max-width: 497px;
+  }
+}
+
+.yacht-adventures {
+  background-image: linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.paragraf-review2 {
+  color: var(--main-text-color);
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  text-align: left;
+}
+
+/* Small devices */
+@media only screen and (max-width: 319px) {
+  .paragraf-review2 {
+    margin-top: 40px;
+    margin-bottom: 24px;
+    margin-right: 0;
+    font-size: 12px;
+    letter-spacing: -0.28px;
+  }
+}
+
+/* Mobile */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .paragraf-review2 {
+    /* margin-bottom: 40px; */
+    margin-right: 0;
+    margin-left: 0;
+    font-size: 14px;
+    letter-spacing: -0.28px;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .paragraf-review2 {
+    font-size: 16px;
+    letter-spacing: -0.32px;
+    max-width: 273px;
+    display: flex;
+    margin-left: 431px;
+    align-self: stretch;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  .list-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 14px;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .list-review {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 16px;
+    margin-bottom: 32px;
+    justify-content: center;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+  .list-review {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 64px;
+    justify-content: space-between;
+  }
+}
+
+.item-review {
+  border-radius: 24px;
+  background: var(--cards-color);
+}
+
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+  .item-review {
+    width: 384px;
+  }
+}
+
+/* Mobile */
+@media only screen and (min-width: 375px) {
+  .card-review {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 17.5px 24px 17.5px;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .card-review {
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px 24px 12px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+  .card-review {
+    padding: 0 12px 24px 12px;
+  }
+}
+
+/* Mobile */
+@media only screen and (min-width: 375px) {
+  .reviewer-title {
+    color: var(--main-text-color);
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    display: flex;
+    margin-bottom: 8px;
+    letter-spacing: -0.72px;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .reviewer-title {
+    color: var(--main-text-color);
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    display: flex;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: -0.81px;
+  }
+}
+
+/* Mobile */
+@media only screen and (min-width: 375px) {
+  .reviewer-paragraf {
+    color: rgba(246, 245, 239, 0.5);
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    display: flex;
+    align-self: stretch;
+    letter-spacing: -0.24px;
+    max-width: 300px;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .reviewer-paragraf {
+    max-width: 320px;
+    font-size: 16px;
+    letter-spacing: -0.32px;
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1280px) {
+    .reviewer-paragraf {
+      max-width: 360px;
+      font-size: 16px;
+      letter-spacing: -0.32px;
+    }
+  }
