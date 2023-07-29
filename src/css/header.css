@@ -95,6 +95,7 @@ nav {
 }
 
 .menu-container {
+  overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -160,10 +161,10 @@ nav {
 .gradient-circle1 {
   width: 279px;
   height: 279px;
-  border-radius: 279px;
+  border-radius: 50%;
   background-color: #91afba;
   filter: blur(100px);
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(100%);
 }
 .gradient-circle2 {
   width: 279px;
