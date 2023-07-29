@@ -1,6 +1,5 @@
 /*For mobile*/
  .footer {
-    background-color: var(--bg-black);
     padding-top: 41px;
 }
 
@@ -25,6 +24,7 @@
     max-width: 335px;
     padding-top: 41px;
     gap: 40px;
+    position: relative;
 }
 
 /*For tablet*/
@@ -48,6 +48,44 @@
 }
 
 /*For mobile*/
+.footer-spot{
+    position: absolute;
+    width:420px ;
+    height:420px ;
+    transform:rotate(-45.408deg);
+    border-radius: 420px;
+    opacity: 0.6;
+    background:#93ABAE ;
+    filter: blur(100px);
+    right: -90px;
+    bottom: -340px;
+}
+
+/* For tablet */
+@media only screen and (min-width: 768px) {
+.footer-spot {
+    width: 419px;
+    height: 419px;
+    right: 80px;
+    bottom: -390px;
+    border-radius: 419px;
+    transform: rotate(-45.565deg);
+    }
+}
+
+/*For desktop*/
+@media only screen and (min-width: 1280px) {
+.footer-spot{
+    width: 415px;
+    height: 415px;
+    right: 630px;
+    bottom: -380px;
+    border-radius: 415px;
+    transform: rotate(-45.044deg);
+  }
+}
+
+/*For mobile*/
 .link-logo-footer {
   color: #F6F5EF;
   font-size: 14px;
@@ -55,6 +93,15 @@
   line-height: 114%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: flex;
+}
+ 
+
+@media only screen and (max-width: 767px) {
+.link-logo-footer{
+    align-items: center;
+    justify-content: start;
+    }
 }
 
 /*For tablet*/
@@ -68,6 +115,9 @@
 
 .logo-image{
     background-color: lightgray 50%;
+    width: 32px;
+    height: 32px;
+    
 }
 
 /*For mobile*/
@@ -81,6 +131,7 @@
 @media only screen and (min-width: 768px) {
 .navigation-footer-list{
     gap: 24px;
+    margin-bottom: 60px;
   }
 }
 
