@@ -1,18 +1,22 @@
+/*For mobile*/
+.footer{
+    position: relative;
+    overflow: hidden;
+}
 
 /*For mobile*/
   .footer-conteiner {
     display: flex;
     flex-direction: column;
     max-width: 335px;
-    padding-top: 41px;
+    border-top: 1px solid rgba(246, 245, 239, 0.20);
     padding-bottom: 14px;
-    position: relative;
-    overflow:hidden
 }
 
 @media only screen and (max-width: 767px) {
 .footer-conteiner {
     gap: 40px;
+    padding-bottom: 16px;
   }
 }
 
@@ -23,17 +27,13 @@
     flex-wrap: wrap;
     max-width: 704px;  
     justify-content: space-between;
-    padding-top: 65px;
-    padding-bottom: 16px;
     }
 }
 
 /*For desktop*/
 @media only screen and (min-width: 1280px) {
     .footer-conteiner {
-    max-width:1216px ;
-    padding-top: 64px;
-    padding-bottom: 16px;
+    max-width:1216px;
     }
 }
 
@@ -84,6 +84,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   display: flex;
+  padding-top: 40px;
 }
  
 
@@ -100,6 +101,7 @@
     font-size: 18px;
     line-height: 118%;
     letter-spacing: 0.54px;
+    padding-top: 64px;
     }
 }
 
@@ -123,6 +125,7 @@
 @media only screen and (min-width: 768px) {
 .navigation-footer-list{
     gap: 24px;
+    padding-top: 64px;
   }
 }
 
@@ -156,6 +159,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding-top: 64px;
     }
 }
 
