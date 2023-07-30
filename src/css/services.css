@@ -26,6 +26,7 @@
    position: relative; 
    overflow: visible;
    z-index: 0; 
+   /* overflow: hidden; */
   }
 
  
