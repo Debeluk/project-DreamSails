@@ -1,3 +1,148 @@
-.services {
-    background-color: var(--bg-black);
-}
+
+  /**
+  |============================
+  | ----Services block---
+  |============================
+*/
+
+/* .container {border: 2px solid #f31818;} */
+.services-block {
+  background-color: var(--bg-black);
+  padding-top: 40px; 
+  padding-bottom: 40px;}
+
+  @media only screen and (min-width:768px) {
+    .services-block {padding-top: 50px; padding-bottom: 50px;}}
+
+  @media only screen and (min-width: 1280px) { 
+    .services-block {padding-top: 82px; padding-bottom: 82px;}} 
+  
+
+  .sb-box {
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative; 
+   overflow: hidden; }
+ 
+ .sb-spot {
+   position: absolute;
+   width: 323px; 
+   height: 323px; 
+   transform: rotate(-45.074deg);
+   border-radius: 100%; 
+   opacity: 0.6;
+   background: #91AFBA;
+   filter: blur(100px);
+   top: 29%;
+   left: -57%;}
+
+   @media only screen and (min-width:768px) {
+    .sb-spot {
+      width: 414px; 
+      height: 414px; 
+    top: 40%;
+    left: -27%;}}
+   @media only screen and (min-width: 1280px) {
+      .sb-spot {top: 20%; left: -205px;}}
+
+ .sb-content {
+   display: flex; 
+   flex-direction: column;
+   justify-content: center; 
+   align-items: center; 
+   row-gap: 24px;}
+
+   @media only screen and (min-width:768px) {
+    .sb-content {
+      justify-content: center; 
+      align-items: end;
+      row-gap: 32px;}}
+
+    @media only screen and (min-width: 1280px) {
+      .sb-content {
+        flex-direction: row;
+        justify-content: space-between; 
+        flex-wrap: wrap;
+        row-gap: 64px;}}
+
+   .sb-item { 
+    display: flex;     
+    position: relative;}
+
+    .sb-content {width: 100%;}
+    .sb-item  {width: 100%;}
+
+     .sb-text-box {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;  
+     position: absolute;
+     left: 24px;
+     bottom: 24px;
+     padding: 14px 28px;
+     border-radius: 60px;
+     background: #F6F5EF;
+     width: auto; 
+     height: auto;
+    }
+
+    .sb-text { 
+      color: #11131F;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.63px;
+      }
+
+      @media only screen and (min-width:768px) {
+        .sb-text {font-size: 18px; letter-spacing: -0.81px; }}
+
+ .diving {
+  max-width: 335px; 
+     height: 335px; 
+   border-radius: 40px;
+   background-image: linear-gradient(0deg, rgba(17, 19, 31, 0.20), 
+   rgba(17, 19, 31, 0.20)), 
+   url(../img/service/diving@1x.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   }
+ .fishing {
+  max-width: 335px; 
+     height: 335px; 
+     border-radius: 40px;
+   background-image: linear-gradient(0deg, rgba(17, 19, 31, 0.20) 0%, rgba(17, 19, 31, 0.20) 100%), url(../img/service/fishing@1x.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   margin-left: 0;
+    } 
+
+ .sunbath {
+  max-width: 335px; 
+     height: 335px; 
+     border-radius: 40px;
+   background-image: linear-gradient(0deg, rgba(17, 19, 31, 0.20) 0%, rgba(17, 19, 31, 0.20) 100%), url(../img/service/sunbathing@1x.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   left: 0;
+   }   
+
+   @media only screen and (min-width:768px) {
+    .diving {max-width: 704px; height: 632px;}
+    .fishing {max-width: 400px; height: 389px;}
+    .sunbath {max-width: 380px; height: 352px; margin-right: 324px;}
+  }
+  @media only screen and (min-width:1280px) {
+    .diving {max-width: 712px; height: 632px;}
+    .fishing {max-width: 440px; height: 428px;}
+    .sunbath {max-width: 440px; 
+      height: 428px; margin-left: 372px; margin-right: 0;}
+  }
+
+
