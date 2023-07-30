@@ -1,21 +1,3 @@
-/*For mobile*/
- .footer {
-    padding-top: 41px;
-}
-
-/*For tablet*/
-@media only screen and (min-width: 768px) {
-    .footer {
-    padding-top: 65px;
-    }
-}
-
-/*For desktop*/
-@media only screen and (min-width: 1280px) {
-    .footer {
-    padding-top: 64px;
-    }
-}
 
 /*For mobile*/
   .footer-conteiner {
@@ -23,6 +5,7 @@
     flex-direction: column;
     max-width: 335px;
     padding-top: 41px;
+    padding-bottom: 14px;
     position: relative;
     overflow:hidden
 }
@@ -40,14 +23,17 @@
     flex-wrap: wrap;
     max-width: 704px;  
     justify-content: space-between;
+    padding-top: 65px;
+    padding-bottom: 16px;
     }
 }
 
 /*For desktop*/
 @media only screen and (min-width: 1280px) {
     .footer-conteiner {
-  max-width:1216px ;
-  padding-top: 65px;
+    max-width:1216px ;
+    padding-top: 64px;
+    padding-bottom: 16px;
     }
 }
 
