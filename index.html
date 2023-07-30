@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yacht Adventures</title>
     
-    <script type="module" crossorigin src="/project-DreamSails/assets/index-be82b375.js"></script>
-    <link rel="stylesheet" href="/project-DreamSails/assets/index-9f5dff10.css">
+    <script type="module" crossorigin src="/project-DreamSails/assets/index-7197011d.js"></script>
+    <link rel="stylesheet" href="/project-DreamSails/assets/index-646947f9.css">
   </head>
   <body>
     <header>
@@ -336,23 +336,29 @@
     <div class="container yahts-container">
         <div class="yahts-title-container">
 
-            <h2 class="yaht-title">Choose your dream yacht and sail away into the sunset</h2>
+            <h2 class="yaht-title" id="yachtblock">Choose your dream yacht and sail away into the sunset</h2>
             <div class="yaht-elipce">
             </div>
             <div class="yaht-elipce-2">
             </div>
+            <a href="#Yacht" class="yaht-btn-link">
+                <button href="#Yacht" class="yaht-btn">
+                    Yacht rental
+                </button>
+            </a>
 
-            <button class="yaht-btn" type="button">Yacht rental</button>
+
         </div>
 
-        <div class="yahts-block">
+        <!-- ID ???? -->
+        <div class="yahts-block" id="Yacht">
 
             <div class="yahts-list">
 
                 <div class="yahts-item yaht-1">
                     <img class="yahts-img yahts-1-img"
-                        srcset="../img/yahtsblock/yaht-1.png, ../img/yahtsblock/yaht-1@2x.png 2x"
-                        src="../img/yahtsblock/yaht-1.png" alt="Arrow" width="299" height="251">
+                        srcset="/project-DreamSails/assets/yaht-1-0d1cc33f.png , /project-DreamSails/assets/yaht-1@2x-d23197a7.png 2x"
+                        src="/project-DreamSails/assets/yaht-1-0d1cc33f.png" alt="ARROW" width="299" height="251">
                     <div class="yahts-card-container">
                         <div class="yahts-item-text">
                             <p class="yahts-name">ARROW</p>
@@ -379,8 +385,8 @@
 
                 <div class="yahts-item yaht-2">
                     <img class="yahts-img yahts-2-img"
-                        srcset="../img/yahtsblock/yaht-2.png, ../img/yahtsblock/yaht-2@2x.png 2x"
-                        src="../img/yahtsblock/yaht-2.png" alt="BENETTI OASIS 40M BO122" width="299" height="251">
+                        srcset="/project-DreamSails/assets/yaht-2-5ae2c067.png , /project-DreamSails/assets/yaht-2@2x-a1cf1897.png 2x"
+                        src="/project-DreamSails/assets/yaht-2-5ae2c067.png" alt="BENETTI OASIS 40M BO122" width="299" height="251">
                     <div class="yahts-card-container">
                         <div class="yahts-item-text">
                             <p class="yahts-name">BENETTI OASIS 40M...</p>
@@ -405,10 +411,10 @@
                     </div>
                 </div>
 
-                <div class="yahts-item yaht-3">
+                <div class="yahts-item yaht-3" id="Yachts">
                     <img class="yahts-img yahts-3-img"
-                        srcset="../img/yahtsblock/yaht-3.png, ../img/yahtsblock/yaht-3@2x.png 2x"
-                        src="../img/yahtsblock/yaht-3.png" alt="BENETTI OASIS 40M BO122" width="299" height="251">
+                        srcset="/project-DreamSails/assets/yaht-3-0c12bdaa.png , /project-DreamSails/assets/yaht-3@2x-f6764c0f.png 2x"
+                        src="/project-DreamSails/assets/yaht-3-0c12bdaa.png" alt="BELLE ANNA" width="299" height="251">
                     <div class="yahts-card-container">
                         <div class="yahts-item-text">
                             <p class="yahts-name">BELLE ANNA</p>
@@ -433,31 +439,32 @@
                     </div>
                 </div>
 
-                <!-- ????????????????????? -->
-                <!-- <span class="background-lines"><img src="../img/yahtsblock/background-line.png" alt="bg-lines"></span> -->
-
+                <div class="background-lines"> </div>
             </div>
 
 
             <!-- Arrow -->
             <div class="yacht-arrow">
-                <svg class="arrow-icon-left" xmlns="http://www.w3.org/2000/svg" width="18" height="8" viewBox="0 0 18 8"
-                    fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M5.5 0L0 4L5.5 8V4.69282L18 4.69282V3.30718L5.5 3.30718V0Z" fill="#F6F5EF" />
-                </svg>
+                <button type="button" class="arrow-btn">
+                    <svg class="arrow-icon-left" xmlns="http://www.w3.org/2000/svg" width="18" height="8"
+                        viewBox="0 0 18 8" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M5.5 0L0 4L5.5 8V4.69282L18 4.69282V3.30718L5.5 3.30718V0Z" />
+                    </svg>
+                </button>
 
                 <!-- <svg class="arrow-icon" width="18" height="8" fill="var(--main-text-color)">
                             <use href="../img/icons.svg#arrowleft">
                             </use>
                         </svg> -->
 
-
-                <svg class="arrow-icon-right" xmlns="http://www.w3.org/2000/svg" width="18" height="8"
-                    viewBox="0 0 18 8" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M12.5 0L18 4L12.5 8V4.69282L0 4.69282L0 3.30718L12.5 3.30718V0Z" fill="#F6F5EF" />
-                </svg>
+                <button type="button" class="arrow-btn">
+                    <svg class="arrow-icon-right" xmlns="http://www.w3.org/2000/svg" width="18" height="8"
+                        viewBox="0 0 18 8" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12.5 0L18 4L12.5 8V4.69282L0 4.69282L0 3.30718L12.5 3.30718V0Z" />
+                    </svg>
+                </button>
                 <!-- <svg class="arrow-icon-right" width="18px" height="8px" fill="var(--main-text-color)">
                             <use href="../img/icons.svg#arrowright">
                             </use>
@@ -485,6 +492,7 @@
     
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
+    
 </div> -->
       <section class="services">
 
