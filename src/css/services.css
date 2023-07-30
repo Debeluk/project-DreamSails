@@ -24,7 +24,10 @@
    justify-content: center;
    align-items: center;
    position: relative; 
-   overflow: hidden; }
+   overflow: visible;
+   z-index: 0; 
+  }
+
  
  .sb-spot {
    position: absolute;
