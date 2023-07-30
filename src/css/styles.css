@@ -101,7 +101,7 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 20px;
-  max-width: 375px;
+  max-width: 335px;
 }
 
 /*
@@ -114,7 +114,7 @@ body {
   .container {
     margin: 0 auto;
     padding: 0 32px;
-    max-width: 768px;
+    max-width: 704px;
   }
 }
 
@@ -128,6 +128,6 @@ body {
   .container {
     margin: 0 auto;
     padding: 0 32px;
-    max-width: 1280px;
+    max-width: 1216px;
   }
 }

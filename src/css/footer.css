@@ -23,8 +23,14 @@
     flex-direction: column;
     max-width: 335px;
     padding-top: 41px;
-    gap: 40px;
     position: relative;
+    overflow:hidden
+}
+
+@media only screen and (max-width: 767px) {
+.footer-conteiner {
+    gap: 40px;
+  }
 }
 
 /*For tablet*/
@@ -41,8 +47,6 @@
 @media only screen and (min-width: 1280px) {
     .footer-conteiner {
   max-width:1216px ;
-  gap: 315px;
-  flex-wrap: wrap;
   padding-top: 65px;
     }
 }
@@ -113,6 +117,7 @@
     }
 }
 
+
 .logo-image{
     background-color: lightgray 50%;
     max-width: 100%;
@@ -132,7 +137,6 @@
 @media only screen and (min-width: 768px) {
 .navigation-footer-list{
     gap: 24px;
-    margin-bottom: 60px;
   }
 }
 
@@ -140,7 +144,6 @@
 @media only screen and (min-width: 1280px) {
 .navigation-footer-list{
     flex-direction: row;
-    margin: 0;
   }
 }
 
@@ -236,6 +239,18 @@
     justify-content: center;
     width: 100%;
     margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+.privacy-police{
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+.privacy-police {
+    padding-top: 132px;
+  }
 }
 
 /*For mobile*/
