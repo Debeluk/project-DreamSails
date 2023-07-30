@@ -233,7 +233,7 @@
   position: relative;
   width: 335px;
   height: 427px;
-  background-image: url(../img/hero-img/mask-group@1x.png);
+  background-image: url(/img/hero-img/mask-group@1x.png);
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -242,7 +242,7 @@
   .mask-group {
     min-width: 335px;
     height: 427px;
-    background-image: url(../img/hero-img/mask-group@2x.png);
+    background-image: url(/img/hero-img/mask-group@2x.png);
   }
 }
 
@@ -250,7 +250,7 @@
   .mask-group {
     min-width: 426px;
     height: 598px;
-    background-image: url(../img/hero-img/mask-group-tabl@1x.png);
+    background-image: url(/img/hero-img/mask-group-tabl@1x.png);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -258,7 +258,7 @@
     .mask-group {
       width: 426px;
       height: 598px;
-      background-image: url(../img/hero-img/mask-group-tabl@2x.png);
+      background-image: url(/img/hero-img/mask-group-tabl@2x.png);
     }
   }
 }
