@@ -205,6 +205,14 @@
     }
 }
 
+.footer-icon-list .list-item:hover .chain-icon{
+    fill:#BEC7C2;
+}
+
+.footer-icon-list .list-item:hover{
+    border:1px solid #BEC7C2;
+}
+
 .icon-link{
     width: 100%;
     height: 100%;
@@ -215,7 +223,9 @@
 
 .chain-icon{
     fill: #F6F5EF;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 @media only screen and (max-width: 767px) {
   .chain-icon {
@@ -234,7 +244,11 @@
 }
 
 .privacy-police{
-   margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
