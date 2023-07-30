@@ -26,6 +26,8 @@
    overflow: visible;
    z-index: 0;
   }
+
+  
  .sb-spot {
    position: absolute;
    width: 323px; 
