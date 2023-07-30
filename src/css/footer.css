@@ -234,11 +234,7 @@
 }
 
 .privacy-police{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
+   margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -256,13 +252,13 @@
 /*For mobile*/
 .privacy-police-list {
     display: flex;
-    gap: 32px;
+    gap: 14px;
 }
 
 /*For tablet*/
 @media only screen and (min-width: 768px) {
 .privacy-police-list {
-    gap: 30px;
+    gap: 32px;
     }
 }
 
@@ -282,3 +278,4 @@
     font-size: 14px;
     }
 }
+
