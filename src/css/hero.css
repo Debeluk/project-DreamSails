@@ -224,18 +224,26 @@
   background-image: url(../img/hero-img/mask-group@1x.png);
 }
 
-/* @media (min-device-pixel-ratio: 2),
+@media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .mask-group {
     background-image: url(../img/hero-img/mask-group@2x.png);
   }
-} */
+}
+
 @media only screen and (min-width: 768px) {
   .mask-group {
     width: 426px;
     height: 598px;
     background-image: url(../img/hero-img/mask-group-tabl@1x.png);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .mask-group {
+      background-image: url(../img/hero-img/mask-group-tabl@2x.png);
+    }
   }
 }
 /* @media (min-device-pixel-ratio: 2),
@@ -375,12 +383,7 @@
   .hero-price-text {
     width: 208px;
     height: 36px;
-
-    color: #11131f;
-    font-family: DM Sans;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 110%; /* 19.8px */
     letter-spacing: -0.81px;
   }
