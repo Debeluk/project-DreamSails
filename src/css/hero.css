@@ -253,7 +253,7 @@
   .mask-group {
     min-width: 335px;
     height: 427px;
-    background-image: url(../img/hero-img/mask-group@2x.png);
+    background-image: url(/img/hero-img/mask-group@2x.png);
   }
 }
 
