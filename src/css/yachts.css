@@ -455,7 +455,7 @@
 }
 
 .background-lines {
-    background-image: url("../img/yahtsblock/background-line.png");
+    background-image: url("/img/yahtsblock/background-line.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
