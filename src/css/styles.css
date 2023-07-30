@@ -14,8 +14,6 @@
 @import url('./review.css');
 @import url('./footer.css');
 
-
-
 /*
   ================================================================================================================
   FONTS
@@ -57,19 +55,19 @@
 */
 
 :root {
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
 
-  --bg-black: #11131F;
+  --bg-black: #11131f;
   /* Color for background*/
-  --cards-color: #1F212D;
+  --cards-color: #1f212d;
   /* Color for yachts and reviews cards*/
-  --main-text-color: #F6F5EF;
+  --main-text-color: #f6f5ef;
   /* Main text color*/
   --second-text-color: #f6f5ef80;
   /* Darkened main text color*/
-  --button-color: #93ABAE;
+  --button-color: #93abae;
   /* Button bg color*/
-  --button-hover-color: #88B3B9;
+  --button-hover-color: #88b3b9;
   /* Hovered button bg color*/
 
   font-synthesis: none;
@@ -119,7 +117,7 @@ html {
   ================================================================================================================
 */
 
-@media (min-width:704px) {
+@media (min-width: 768px) {
   .container {
     margin: 0 auto;
     padding: 0 32px;
@@ -133,7 +131,7 @@ html {
   ================================================================================================================
 */
 
-@media (min-width:1280px) {
+@media (min-width: 1280px) {
   .container {
     margin: 0 auto;
     padding: 0 32px;
