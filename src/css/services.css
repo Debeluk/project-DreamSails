@@ -24,8 +24,7 @@
    align-items: center;
    position: relative; 
    overflow: visible;
-   z-index: 0; 
-  }
+   z-index: 0;}
  
  .sb-spot {
    position: absolute;
