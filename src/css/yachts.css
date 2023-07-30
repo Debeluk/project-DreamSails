@@ -9,16 +9,18 @@
     align-items: center;
 }
 
+
 .yahts-block {
-    margin-bottom: 24px;
+    margin-bottom: 82px;
     position: relative;
 }
 
 .yahts-list {
-
     display: flex;
     gap: 16px;
     justify-content: center;
+    position: relative;
+    z-index: 3;
 }
 
 .yahts-item {
@@ -52,6 +54,7 @@
 .yahts-title-container {
     align-items: start;
     position: relative;
+    z-index: 2;
 }
 
 .yaht-title {
@@ -463,7 +466,7 @@
     width: 1280px;
     height: 1611.22px;
     flex-shrink: 0;
-    z-index: -1;
+    z-index: 0;
     overflow: hidden;
 }
 
