@@ -71,11 +71,16 @@
     filter: blur(100px);
   }
 }
-
 .hero-container {
-  width: 335px;
   margin-bottom: 40px;
 }
+@media only screen and (min-width: 375px) {
+  .hero-container {
+    width: 335px;
+    margin-bottom: 40px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .hero-container {
     width: 704px;
@@ -219,7 +224,7 @@
 }
 .mask-group {
   position: relative;
-  width: 335px;
+  min-width: 335px;
   height: 427px;
   background-image: url(../img/hero-img/mask-group@1x.png);
 }
@@ -234,7 +239,7 @@
 
 @media only screen and (min-width: 768px) {
   .mask-group {
-    width: 426px;
+    min-width: 426px;
     height: 598px;
     background-image: url(../img/hero-img/mask-group-tabl@1x.png);
   }
@@ -242,19 +247,12 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .mask-group {
+      width: 426px;
+      height: 598px;
       background-image: url(../img/hero-img/mask-group-tabl@2x.png);
     }
   }
 }
-/* @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .mask-group {
-    width: 426px;
-    height: 598px;
-    background: url(../img/hero-img/mask-group-tabl@2x.png);
-  }
-} */
 @media only screen and (min-width: 768px) {
   .hero-icon {
     width: 56px;
