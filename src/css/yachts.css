@@ -3,11 +3,6 @@
 }
 
 
-
-.yahts-section {}
-
-.container {}
-
 .yahts-container {
     display: flex;
     flex-direction: column;
@@ -106,7 +101,6 @@
     }
 }
 
-.yaht-title-elipce {}
 
 .yaht-elipce {
     position: absolute;
@@ -190,6 +184,21 @@
     letter-spacing: -0.63px;
     margin-bottom: 80px;
 }
+
+.yaht-btn:hover {
+    color: var(--button-color);
+    border: 1px solid var(--button-color);
+}
+
+.yaht-btn:focus {}
+
+.yaht-btn-link {}
+
+.yaht-btn-link:focus .yaht-btn {
+    color: var(--button-color);
+    border: 1px solid var(--button-color);
+}
+
 
 
 @media only screen and (min-width: 768px) {
@@ -298,8 +307,6 @@
     margin-bottom: 24px;
 }
 
-.yaht-1 {}
-
 @media only screen and (max-width: 374px) {
     .yaht-1 {
         width: 98%
@@ -402,25 +409,66 @@
     border-radius: 60px;
     background-color: transparent;
     padding: 14px;
+    fill: #F6F5EF;
 }
+
+
+.arrow-btn:hover .arrow-icon-left {
+    border: 1px solid var(--button-color);
+    fill: var(--button-color);
+}
+
+.arrow-btn:focus .arrow-icon-left {
+    border: 1px solid var(--button-color);
+    fill: var(--button-color);
+}
+
+
 
 .arrow-icon-right {
     border: 1px solid var(--main-text-color);
     border-radius: 60px;
     background-color: transparent;
     padding: 14px;
+    fill: #F6F5EF;
 }
 
+.arrow-btn:hover .arrow-icon-right {
+    border: 1px solid var(--button-color);
+    fill: var(--button-color);
+}
 
+.arrow-btn:focus .arrow-icon-right {
+    border: 1px solid var(--button-color);
+    fill: var(--button-color);
+}
 
-/* ???????????????????????? */
-/* .background-lines {
+.arrow-btn {
+    padding: 0;
+    border: none;
+
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.background-lines {
+    background-image: url("../img/yahtsblock/background-line.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
-
+    opacity: 0.35;
+    width: 100%;
     top: -531px;
-    left: -36px;
-    width: 1508.573px;
+    left: -102px;
+    width: 1280px;
     height: 1611.22px;
-    transform: rotate(2deg);
     flex-shrink: 0;
-} */
+    z-index: -1;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1200px) {
+    .background-lines {
+        display: none;
+    }
+}
