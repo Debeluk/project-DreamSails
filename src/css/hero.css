@@ -310,6 +310,7 @@
   text-transform: uppercase;
 }
 .hero-img-ceo {
+  border-radius: 24px;
   position: absolute;
   top: 35px;
   right: -12px;
