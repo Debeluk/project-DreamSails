@@ -411,7 +411,7 @@
     border: 1px solid var(--main-text-color);
     border-radius: 60px;
     background-color: transparent;
-    padding: 14px;
+    padding: 8px;
     fill: #F6F5EF;
 }
 
@@ -432,7 +432,7 @@
     border: 1px solid var(--main-text-color);
     border-radius: 60px;
     background-color: transparent;
-    padding: 14px;
+    padding: 8px;
     fill: #F6F5EF;
 }
 
