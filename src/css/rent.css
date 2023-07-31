@@ -1,9 +1,12 @@
 .rent-pic {
-    display: flex;
+  display: flex;
+  overflow: visible;
+  position: relative;
 }
 
-
-
+.rent-input::placeholder{
+  color: var(--main-text-color);
+}
 
 /*
   ================================================================================================================
@@ -11,185 +14,40 @@
   ================================================================================================================
 */
 .rent-title {
-    color: var(--main-text-color);
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: -1.62px;
-    /* padding-top: 40px; */
-    padding-bottom: 16px;
+  color: var(--main-text-color);
+  font-family: DM Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -1.62px;
+  padding-top: 40px;
+  padding-bottom: 16px;
 }
 
-.rent-pic{
-    padding-bottom: 40px;
+.rent-pic {
+  padding-bottom: 40px;
 }
 
 .rent-input {
-    width: 335px;
-    background-color: var(--bg-black);
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: 1px solid var(--main-text-color);
-    font-size: 16px;
-    
-    color: var(--main-text-color);
-}
-.rent-form {
-    display: flex;
-    flex-direction: column;
-
-}
-.rent-label {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: -0.63px;
-    color: var(--main-text-color);
-    
-        
+  width: 335px;
+  background-color: var(--bg-black);
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid var(--main-text-color);
+  padding-bottom: 16px;
+  color: var(--main-text-color);
 }
 
-
-
-.container-rent-label .rent-label {
-    display: flex;
-    flex-direction: column;
-}
-.rent-textarea {
-    background-color: transparent;
-    border-top: 0px;
-        border-left: 0px;
-        border-right: 0px;
-        border-bottom: 1px solid var(--main-text-color);
-    resize: none;
-    height: 58px;
-    
-}
-.container-rent-label {
-    margin-bottom: 14px;
-}
-/* =======================================================================================
-  TABLET 
- =======================================================================================
- */
-
-@media screen and (min-width:768px) {
- .rent-textarea {
-   
-     margin-bottom: 44px;
- }
-}
- @media screen and (min-width:768px) {
-     .rent-img {
-         width: 271px;
-         height: 187px;
-         margin-bottom: 0;
-     }
- }
-
-  @media screen and (min-width:768px) {
-     .rent-container{
-         display: flex;
-         column-gap: 69px;
-     }
- 
-    }
-
-
- @media screen and (min-width:768px) {
-     .rent-button {
-         font-size: 18px;
-         letter-spacing: -0.81px;
-         width: 132px;
-         height: 48px;
-        
-     }
- }
-
- @media screen and (min-width:1280px) {
-     .container-rent-label {
-         margin-bottom: 24x;
-     }
- }
-
- @media screen and (min-width:768px) {
-     .rent {
-         width: 704px;
-         margin: 0 auto;
-     }
- }
-
- @media screen and (min-width:768px) {
-    .rent-label {
-        font-size: 16px;
-        letter-spacing: -0.72px;}
- }
-
-@media screen and (min-width:768px) {
-    .rent-title {
-        font-size: 60px;
-        padding-bottom: 32px;
-        width: 287px;
-        letter-spacing: -2.7px;
-    }
+#user-comment {
+  padding-bottom: 56px;
 }
 
 .rent-input:focus {
-    outline: none;
-}
-.rent-textarea:focus {
-    outline: none;
-}
-/*
-  ================================================================================================================
-  DESKTOP
-  ================================================================================================================
-*/
-
-
-
-@media screen and (min-width:1280px) {
-    .rent-img {
-        width: 282px;
-        height: 191px;
-        margin-bottom: 0;
-    }
+  outline: none;
 }
 
-@media screen and (min-width:1280px) {
-    .rent-container {
-        column-gap: 188px;
-    }
-
-} 
-
-
-
-
-@media screen and (min-width:1280px) {
-    .container-rent-label {
-        margin-bottom: 28px;
-    }
-}
-
-@media screen and (min-width:1280px) {
-    .rent {
-        width: 913px;
-        margin: 0 auto;
-    }
-}
-@media screen and (min-width:1280px) {
-    .rent-title {
-        padding-bottom: 64px;
-    }
-}
-@media screen and (min-width:1280px) {
-    .rent-textarea {
-        margin-bottom: 20px;
-        
-    }
-}
 /*
   ================================================================================================================
   BUTTON - SAME FOR ALL DEVICES
@@ -197,42 +55,31 @@
 */
 
 .rent-button {
-     display: flex;
-    padding: 14px 28px;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    border-radius: 60px;
-    border: 1px solid var(--main-text-color);
-    background-color: transparent;
-    
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: -0.63px;
-    color: var(--main-text-color);
-    width: 123px;
-    height: 43px;
-}
-@media screen and (min-width:768px) {
-    .rent-button {
-        width: 123px;
-        height: 43px;
-    }
+  display: flex;
+  background-color: var(--bg-black);
+  border: 1px solid var(--main-text-color);
+  border-radius: 60px;
 }
 
-@media screen and (min-width:1280px) {
-    .rent-button {
-        font-size: 18px;
-        letter-spacing: -0.81px;
-        width: 132px;
-        height: 48px;
-    }
+.rent-button-p {
+  color: var(--main-text-color);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; /* 15.4px */
+  letter-spacing: -0.63px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 24px;
 }
 
 .rent-button-icon {
-fill: var(--main-text-color);
-    width: 18px;
+  fill: var(--main-text-color);
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 0px;
+  padding-right: 8px;
 }
 
 /*
@@ -241,143 +88,180 @@ fill: var(--main-text-color);
   ================================================================================================================
 */
 
-.button-close{
-    background-color: var(--cards-color);
+.button-close {
+  background-color: var(--bg-black);
 }
 
-.button-close-icon{
-    stroke: var(--main-text-color);
+.button-close-icon {
+  fill: var(--main-text-color);
 }
 
 .rent-modal-pic {
-    width: 287px;
-    height: 149px;
-    padding-top: 6px;
-    padding-left: 24px;
-    padding-bottom: 24px;
+  width: 287px;
+  height: 149px;
+  padding-top: 6px;
+  padding-left: 24px;
+  padding-bottom: 24px;
 }
 
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(46, 47, 66, 0.4);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    overflow: scroll;
-    border-radius: 20px;
-    left: ;
-    top: ;
+  overflow: scroll;
+  border-radius: 20px;
+  z-index: 999;
 }
 
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%) scale(1);
-    width: 335px;
-    height: 396px;
-    background: var(--cards-color);
-    border-radius: 20px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 100;
-  }
-
-.close-button{
-    max-width: 20px;
-    max-height: 20px;
-    background-color: var(--cards-color);
-    border: 0;
-    padding-left: 301px;
-    padding-top: 14px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 335px;
+  height: 396px;
+  background: var(--bg-black);
+  border-radius: 20px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.close-button {
+  max-width: 20px;
+  max-height: 20px;
+  background-color: var(--bg-black);
+  border: 0;
+  margin-left: 301px;
+  margin-top: 14px;
+}
 
+.modal-thanks {
+  color: var(--main-text-color);
+  padding-left: 24px;
+  padding-right: 24px;
+  font-family: DM Sans;
+}
 
 .modal-h {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: -1.08px;
-    padding-bottom: 14px;
-    color: var(--main-text-color);
-    padding-left: 24px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -1.08px;
+  padding-bottom: 14px;
 }
 
 .modal-p {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.4;
-    letter-spacing: -0.28px;
-    color: var(--main-text-color);
-    padding-left: 24px;
-    padding-right: 24px;
-}
-.close-icon {
-    stroke: var(--main-text-color);
-    
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.28px;
 }
 /*
   ================================================================================================================
   TABLET
   ================================================================================================================
 */
-@media screen and (min-width:768px) {
-    .modal {
-        width: 570px;
-        height: 522px;
-        transform: translate(-50%, -50%) scale(1);
-    }
-}
-@media screen and (min-width:768px) {
-    .modal-h {
-        font-size: 32px;
-        letter-spacing: -1.44px;
-        padding-bottom: 16px;
-        padding-left: 44px;
-        padding-right: 44px;
-    }
-    .close-icon {
-        width: 24px;
-        height: 24px;
-    }
-    .close-button {
-      
-        padding-left: 514px;
-        padding-top: 32px;
 
-        }
-}
-@media screen and (min-width:768px) {
-    .modal-p {
-        
-        font-size: 16px;
-        letter-spacing: -0.32px;
-        padding-bottom: 44px;
-        padding-left: 44px;
-        width: 442px;
-    }
-}
-@media screen and (min-width:768px) {
-    .rent-modal-pic {
+@media (min-width: 768px) {
+  .rent-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 451px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .rent-title {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -2.7px;
+    max-width: 287px;
+    display: flex;
+  }
+
+  .rent-pic {
+    padding-top: 24px;
+  }
+
+  .rent-button {
+    margin-top: 42px;
+    margin-right: 264px;
+    max-width: 116px;
+  }
+
+  .rent-input {
+    width: 364px;
+  }
+
+  .modal {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 570px;
+    height: 522px;
+    background: var(--bg-black);
+    border-radius: 20px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .close-button {
+    margin-left: 514px;
+    margin-top: 32px;
+  }
+
+  .rent-modal-pic {
     width: 338px;
     height: 198px;
-        padding-top: 97px;
-        padding-left: 116px;
-        padding-bottom: 21px;}
-}
+    padding-left: 116px;
+    padding-bottom: 21px;
+    padding-top: 41px;
+  }
 
+  .modal-thanks {
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-bottom: 64px;
+  }
+
+  .modal-h {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -1.44px;
+  }
+
+  .modal-p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.32px;
+  }
+}
 
 /*
   ================================================================================================================
@@ -385,66 +269,79 @@ fill: var(--main-text-color);
   ================================================================================================================
 */
 
-@media screen and (min-width:1280px) {
-    .close-button {
-    
-            padding-top: 32px;
-            padding-left: 514px;
+@media (min-width: 1280px) {
+  .rent-pic {
+    padding-left: 152px;
+    width: 282px;
+    height: 191px;
+  }
 
-        }
-    
-}
+  .rent-title {
+    width: 282px;
+    height: 132px;
+    padding-left: 152px;
+  }
 
-/* Spot */
+  .rent-input {
+    width: 443px;
+  }
 
-.rent-modal-spot {
-    position: absolute;
-    width: 142px;
-    height: 142px;
-    transform: rotate(-45.074deg);
-    border-radius: 100%;
-    opacity: 0.6;
-    background: #91AFBA;
-    filter: blur(100px);
-    top: 15%;
-    left: 40%;
-}
-.rent-spot {
-    position: absolute;
-    width: 283px;
-        height: 283px;
-        transform: rotate(-44.916deg);
-        border-radius: 283px;
-        opacity: 0.6;
-        background: #91AFBA;
-        filter: blur(100px);
-        top: 70%;
-        left: 30%;
-}
-.rent-container {
-position: relative;
-}
-/* Tablet */
-@media screen and (min-width:768px) {
-    .rent-modal-spot {
-        top: 25%;
-        
-    }
-}
-@media screen and (min-width:768px) {
-    .rent-spot {
-        top: 15%;
-        left: 95%;
-    }   
+  .rent-container{
+    margin-bottom: 164px !important;
+    margin-top: 82px !important;
+  }
 }
 
-/* Desktop */
-@media screen and (min-width:1280px) {
-    .rent-spot {
-        width: 414px;
-        height: 414px;
-        transform: rotate(-45.074deg);
-        left: 85%;
-        top: 20%;
-    }
+.rent-form {
+  padding-top: 0;
+  padding-bottom: 24px;
+  display: flex !important;
+  flex-direction: column;
+  gap:24px;
+}
+
+@media (min-width:768px) {
+  .rent-form {
+    padding-top: 40px;
+    padding-bottom: 0;
+    gap: 28px;
+  }
+}
+
+@media (max-width:374px) {
+  .rent-input {
+    width: 300px;
+  }
+
+  .modal{
+    width: 300px;
+  }
+
+  .rent-modal-pic {
+    padding-left: 0px;
+  }
+
+  .close-button{
+    margin-left: 200px;
+  }
+}
+
+.rent-modal-spot{
+  position: absolute;
+  left: 34px;
+  width: 265px;
+  height: 265px;
+  border-radius: 265px;
+  opacity: 0.6000000238418579;
+  background: #91AFBA;
+  filter: blur(100px);
+  transform: rotate(-45.074deg);
+  z-index: 98;
+}
+
+@media (min-width:768px) {
+  .rent-modal-spot{
+    left: 145px;
+    top: 80px;
+  }
 }

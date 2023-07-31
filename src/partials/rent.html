@@ -1,50 +1,64 @@
 <section class="rent">
   <div class="container rent-container">
-    <div class="rent-spot"></div>
-    <div class="rent-card">
     <h3 class="rent-title">Rent a yacht now</h3>
     <div class="rent-pic">
       <img
-      class="rent-img"
         srcset="/img/rent/yahtrent@1x.png 1x, /img/rent/yahtrent@2x.png 2x"
         src="/img/rent/yahtrent@1x.png"
-        width="259px"
-        height="187px"
+        width="259"
+        height="187" alt="a yacht in the water"
       />
     </div>
-    </div>
     <div>
-        <form class="rent-form">
-            <div class="container-rent-label">
-                <label for="user-name" class="rent-label">Full name</label>
-                <input type="text"  name="user-name" id="user-name" class="rent-input" required/>
-            </div>
-            <div class="container-rent-label">
-                <label for="user-email" class="rent-label">Email </label>
-                <input type="email"  name="user-email" id="user-email" class="rent-input" required/>
-            </div>
-            <div class="container-rent-label">
-                <label for="user-phone" class="rent-label">Phone number</label>
-                <input type="tel"  name="user-phone" id="user-phone" class="rent-input" required/>
-            </div>
-            <div class="container-rent-label">
-                <label class="rent-label" for="user-comment">
-                    Comment
-                    <textarea class="rent-textarea" name="user-comment" id="user-comment" rows="4"></textarea>
-                </label>
-            </div>
-
-
-            <div class="container-send-btn">
-                <button class="rent-button" type="submit" data-modal-open>
-                    Send
-                    <svg width="38px" height="18px" class="rent-button-icon">
-                        <use href="../img/icons.svg#arrowright"></use>
-                    </svg>
-                </button>
-            </div>
-        </form>
+      <form class="rent-form">
+        <div>
+          <label for="user-name" class="rent-label"> </label>
+          <input
+            type="text"
+            placeholder="Full Name"
+            name="user-name"
+            id="user-name"
+            class="rent-input"
+          />
+        </div>
+        <div>
+          <label for="user-email" class="rent-label"> </label>
+          <input
+            type="email"
+            placeholder="Email"
+            name="user-email"
+            id="user-email"
+            class="rent-input"
+          />
+        </div>
+        <div>
+          <label for="user-phone" class="rent-label"> </label>
+          <input
+            type="tel"
+            placeholder="Phone number"
+            name="user-phone"
+            id="user-phone"
+            class="rent-input"
+          />
+        </div>
+        <div>
+          <label for="user-comment" class="rent-label"> </label>
+          <input
+            type="text"
+            placeholder="Comment"
+            name="user-comment"
+            id="user-comment"
+            class="rent-input"
+          />
+        </div>
+      </form>
     </div>
-    
+    <div class="rent-spot"></div>
+    <button class="rent-button" type="submit" data-modal-open>
+      <p class="rent-button-p">Send</p>
+      <svg width="38px" height="18px" class="rent-button-icon">
+        <use href="/img/icons.svg#arrowright"></use>
+      </svg>
+    </button>
   </div>
 </section>
