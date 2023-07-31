@@ -4,7 +4,7 @@ img {
 }
 
 /* Mobile */
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 320px) {
   .imageReview {
     background-color: transparent;
     margin-left: auto;
@@ -37,7 +37,7 @@ img {
 .container {
   margin: 0 auto;
   padding: 0 20px;
-  max-width: 375px;
+  max-width: 320px;
 }
 
 /* Tablet */
@@ -59,7 +59,7 @@ img {
 }
 
 /* Mobile */
-@media only screen and (min-width: 375px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .container-paragrafs {
     display: flex;
     flex-direction: column;
@@ -235,7 +235,7 @@ img {
 }
 
 /* Mobile */
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 320px) {
   .card-review {
     display: flex;
     flex-wrap: wrap;
@@ -261,7 +261,7 @@ img {
 }
 
 /* Mobile */
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 320px) {
   .reviewer-title {
     color: var(--main-text-color);
     text-align: center;
@@ -295,7 +295,7 @@ img {
 }
 
 /* Mobile */
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 320px) {
   .reviewer-paragraf {
     color: rgba(246, 245, 239, 0.5);
     text-align: center;
