@@ -53,6 +53,12 @@
 
 }
 
+@media(max-width:374px) {
+    .info-yacht{
+        width: 300px;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .info-yacht {
         width: 514px;
