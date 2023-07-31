@@ -107,8 +107,7 @@
      }
  }
 
- @media screen and (min-width:1280px
- px) {
+ @media screen and (min-width:1280px) {
      .container-rent-label {
          margin-bottom: 24x;
      }
@@ -394,6 +393,8 @@ fill: var(--main-text-color);
 }
 
 
+/* Spot */
+
 .rent-modal-spot {
     position: absolute;
     width: 142px;
@@ -421,14 +422,23 @@ fill: var(--main-text-color);
 .rent-container {
 position: relative;
 }
+/* Tablet */
 @media screen and (min-width:768px) {
-    .rent-spot {left: 100%;}
-    .left-bottom {
-        left: 90%;
+    .rent-spot {
+        top: 15%;
+        left: 95%;
     }
     
 }
 @media screen and (min-width:768px) {}
 @media screen and (min-width:1280px) {}
-
-@media screen and (min-width:1280px) {}
+/* Desktop */
+@media screen and (min-width:1280px) {
+    .rent-spot {
+        width: 414px;
+        height: 414px;
+        transform: rotate(-45.074deg);
+        left: 85%;
+        top: 20%;
+    }
+}
