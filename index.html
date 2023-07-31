@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yacht Adventures</title>
     
-    <script type="module" crossorigin src="/project-DreamSails/assets/index-bcdc2b97.js"></script>
-    <link rel="stylesheet" href="/project-DreamSails/assets/index-d22bbba0.css">
+    <script type="module" crossorigin src="/project-DreamSails/assets/index-824cfa2b.js"></script>
+    <link rel="stylesheet" href="/project-DreamSails/assets/index-68d8f061.css">
   </head>
   <body>
     <header>
@@ -321,8 +321,70 @@
     </div>
   </section>
       <section class="rent">
-
+  <div class="container rent-container">
+    <h3 class="rent-title">Rent a yacht now</h3>
+    <div class="rent-pic">
+      <img
+        srcset="/project-DreamSails/assets/yahtrent@1x-d8174b29.png 1x, /project-DreamSails/assets/yahtrent@2x-41c14bd0.png 2x"
+        src="/project-DreamSails/assets/yahtrent@1x-d8174b29.png"
+        width="259"
+        height="187" alt="a yacht in the water"
+      />
+    </div>
+    <div>
+      <form class="rent-form">
+        <div>
+          <label for="user-name" class="rent-label"> </label>
+          <input
+            type="text"
+            placeholder="Full Name"
+            name="user-name"
+            id="user-name"
+            class="rent-input"
+          />
+        </div>
+        <div>
+          <label for="user-email" class="rent-label"> </label>
+          <input
+            type="email"
+            placeholder="Email"
+            name="user-email"
+            id="user-email"
+            class="rent-input"
+          />
+        </div>
+        <div>
+          <label for="user-phone" class="rent-label"> </label>
+          <input
+            type="tel"
+            placeholder="Phone number"
+            name="user-phone"
+            id="user-phone"
+            class="rent-input"
+          />
+        </div>
+        <div>
+          <label for="user-comment" class="rent-label"> </label>
+          <input
+            type="text"
+            placeholder="Comment"
+            name="user-comment"
+            id="user-comment"
+            class="rent-input"
+          />
+        </div>
+      </form>
+    </div>
+    <div class="rent-spot"></div>
+    <button class="rent-button" type="submit" data-modal-open>
+      <p class="rent-button-p">Send</p>
+      <svg width="38px" height="18px" class="rent-button-icon">
+        <use href="/project-DreamSails/assets/icons-8fa121da.svg#arrowright"></use>
+      </svg>
+    </button>
+  </div>
 </section>
+
       <section class="review" id="review-section">
   <div class="container-review container">
     <h2 class="review-container-title visually-hidden">Reviewer</h2>
@@ -513,7 +575,23 @@
   <div class="gradient-circle2"></div>
 </div>
 
-      
+      <div class="backdrop" data-modal>
+    <div class="modal">
+      <button type="button" data-modal-close class="close-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M15 5L5 15" stroke="#F6F5EF" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5 5L15 15" stroke="#F6F5EF" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+      </button>
+      <img class="rent-modal-pic" rcset="/img/rent/rentmodal@1x.png 1x, /img/rent/rentmodal@2x.png 2x"
+      src="/project-DreamSails/assets/rentmodal@1x-c16fd530.png" />
+      <div class="rent-modal-spot"></div>
+      <div class="modal-thanks">
+        <h4 class="modal-h">Thank you</h4>
+        <p class="modal-p">Thank you for choosing Yacht Adventures, your booking details have been received and our team will be in touch shortly to confirm your reservation and provide any additional information or assistance you may need.</p>
+      </div>
+    </div>
+  </div>
     
   </body>
 </html>
