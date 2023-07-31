@@ -127,7 +127,7 @@
 .yaht-elipce-2 {
     position: absolute;
     top: 0;
-    right: -30px;
+    right: -8px;
     width: 195px;
     height: 195px;
     flex-shrink: 0;
@@ -136,13 +136,6 @@
     background: #A6A9B2;
     filter: blur(100px);
     z-index: 98;
-}
-
-@media (min-width:320px) and (max-width:374px) {
-    .yaht-elipce-2 {
-        width: 1px;
-        height: 1px;
-    } 
 }
 
 @media only screen and (min-width: 768px) {
