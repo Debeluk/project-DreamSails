@@ -93,7 +93,7 @@
 
 body {
   background-color: var(--bg-black);
-  margin: 0;
+  margin: 0 auto;
 }
 
 html {
@@ -108,15 +108,15 @@ html {
 
 .container {
   margin: 0 auto;
-  padding: 0 20px;
-  max-width: 335px;
+  padding: 0 10px;
+  min-width: 300px;
+  max-width: 375px;
 }
 
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width: 375px) {
   .container {
-    margin: 0 auto;
-    padding: 0 10px;
-    max-width: 300px;
+    padding: 0 20px;
+    max-width: 335px;
   }
 }
 
@@ -128,7 +128,6 @@ html {
 
 @media (min-width: 768px) {
   .container {
-    margin: 0 auto;
     padding: 0 32px;
     max-width: 704px;
   }
@@ -142,7 +141,6 @@ html {
 
 @media (min-width: 1280px) {
   .container {
-    margin: 0 auto;
     padding: 0 32px;
     max-width: 1216px;
   }
