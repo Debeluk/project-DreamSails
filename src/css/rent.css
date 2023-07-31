@@ -1,3 +1,347 @@
-.rent {
-    background-color: var(--bg-black);
+.rent-pic {
+  display: flex;
+  overflow: visible;
+  position: relative;
+}
+
+.rent-input::placeholder{
+  color: var(--main-text-color);
+}
+
+/*
+  ================================================================================================================
+  MOBILE
+  ================================================================================================================
+*/
+.rent-title {
+  color: var(--main-text-color);
+  font-family: DM Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -1.62px;
+  padding-top: 40px;
+  padding-bottom: 16px;
+}
+
+.rent-pic {
+  padding-bottom: 40px;
+}
+
+.rent-input {
+  width: 335px;
+  background-color: var(--bg-black);
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid var(--main-text-color);
+  padding-bottom: 16px;
+  color: var(--main-text-color);
+}
+
+#user-comment {
+  padding-bottom: 56px;
+}
+
+.rent-input:focus {
+  outline: none;
+}
+
+/*
+  ================================================================================================================
+  BUTTON - SAME FOR ALL DEVICES
+  ================================================================================================================
+*/
+
+.rent-button {
+  display: flex;
+  background-color: var(--bg-black);
+  border: 1px solid var(--main-text-color);
+  border-radius: 60px;
+}
+
+.rent-button-p {
+  color: var(--main-text-color);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; /* 15.4px */
+  letter-spacing: -0.63px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 24px;
+}
+
+.rent-button-icon {
+  fill: var(--main-text-color);
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 0px;
+  padding-right: 8px;
+}
+
+/*
+  ================================================================================================================
+  RENT MODAL
+  ================================================================================================================
+*/
+
+.button-close {
+  background-color: var(--bg-black);
+}
+
+.button-close-icon {
+  fill: var(--main-text-color);
+}
+
+.rent-modal-pic {
+  width: 287px;
+  height: 149px;
+  padding-top: 6px;
+  padding-left: 24px;
+  padding-bottom: 24px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: scroll;
+  border-radius: 20px;
+  z-index: 999;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 335px;
+  height: 396px;
+  background: var(--bg-black);
+  border-radius: 20px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button {
+  max-width: 20px;
+  max-height: 20px;
+  background-color: var(--bg-black);
+  border: 0;
+  margin-left: 301px;
+  margin-top: 14px;
+}
+
+.modal-thanks {
+  color: var(--main-text-color);
+  padding-left: 24px;
+  padding-right: 24px;
+  font-family: DM Sans;
+}
+
+.modal-h {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -1.08px;
+  padding-bottom: 14px;
+}
+
+.modal-p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.28px;
+}
+/*
+  ================================================================================================================
+  TABLET
+  ================================================================================================================
+*/
+
+@media (min-width: 768px) {
+  .rent-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 451px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .rent-title {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -2.7px;
+    max-width: 287px;
+    display: flex;
+  }
+
+  .rent-pic {
+    padding-top: 24px;
+  }
+
+  .rent-button {
+    margin-top: 42px;
+    margin-right: 264px;
+    max-width: 116px;
+  }
+
+  .rent-input {
+    width: 364px;
+  }
+
+  .modal {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 570px;
+    height: 522px;
+    background: var(--bg-black);
+    border-radius: 20px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .close-button {
+    margin-left: 514px;
+    margin-top: 32px;
+  }
+
+  .rent-modal-pic {
+    width: 338px;
+    height: 198px;
+    padding-left: 116px;
+    padding-bottom: 21px;
+    padding-top: 41px;
+  }
+
+  .modal-thanks {
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-bottom: 64px;
+  }
+
+  .modal-h {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -1.44px;
+  }
+
+  .modal-p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.32px;
+  }
+}
+
+/*
+  ================================================================================================================
+  DESKTOP
+  ================================================================================================================
+*/
+
+@media (min-width: 1280px) {
+  .rent-pic {
+    padding-left: 152px;
+    width: 282px;
+    height: 191px;
+  }
+
+  .rent-title {
+    width: 282px;
+    height: 132px;
+    padding-left: 152px;
+  }
+
+  .rent-input {
+    width: 443px;
+  }
+
+  .rent-container{
+    margin-bottom: 164px !important;
+    margin-top: 82px !important;
+  }
+}
+
+.rent-form {
+  padding-top: 0;
+  padding-bottom: 24px;
+  display: flex !important;
+  flex-direction: column;
+  gap:24px;
+}
+
+@media (min-width:768px) {
+  .rent-form {
+    padding-top: 40px;
+    padding-bottom: 0;
+    gap: 28px;
+  }
+}
+
+@media (max-width:374px) {
+  .rent-input {
+    width: 300px;
+  }
+
+  .modal{
+    width: 300px;
+  }
+
+  .rent-modal-pic {
+    padding-left: 0px;
+  }
+
+  .close-button{
+    margin-left: 200px;
+  }
+}
+
+.rent-modal-spot{
+  position: absolute;
+  left: 34px;
+  width: 265px;
+  height: 265px;
+  border-radius: 265px;
+  opacity: 0.6000000238418579;
+  background: #91AFBA;
+  filter: blur(100px);
+  transform: rotate(-45.074deg);
+  z-index: 98;
+}
+
+@media (min-width:768px) {
+  .rent-modal-spot{
+    left: 145px;
+    top: 80px;
+  }
 }
