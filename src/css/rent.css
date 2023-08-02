@@ -48,6 +48,7 @@
   outline: none;
 }
 
+
 /*
   ================================================================================================================
   BUTTON - SAME FOR ALL DEVICES
@@ -59,6 +60,7 @@
   background-color: var(--bg-black);
   border: 1px solid var(--main-text-color);
   border-radius: 60px;
+  margin-top: 24px;
 }
 
 .rent-button-p {
@@ -346,4 +348,33 @@
     left: 145px;
     top: 80px;
   }
+}
+.rent-spot {
+  position: absolute;
+  top: 400px;
+  left: 130px;
+  width: 150px;
+  height: 150px;
+  transform: rotate(-44.916deg);
+  border-radius: 283px;
+  opacity: 0.6;
+  background: #91AFBA;
+  filter: blur(100px);
+  z-index: 98;
+}
+.rent {
+  position: relative;
+}
+@media screen and (min-width:768px) {
+  .rent-spot {
+    top: 200px ;
+    left: 550px;
+  } 
+}
+@media screen and (min-width: 1280px) {
+  .rent-spot {
+    left: 1000px;
+    top: 300px;
+  }
+  
 }
