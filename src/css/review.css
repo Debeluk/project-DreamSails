@@ -34,6 +34,32 @@ img {
 }
 
 /* Mobile */
+@media only screen and (min-width: 320px) {
+  .review {
+    padding-top: 40px;
+    padding-bottom: 14px;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .review {
+    padding-top: 50px;
+    padding-bottom: 32px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+  .review {
+    padding-top: 82px;
+      /* padding-right: 32px; */
+      padding-bottom: 64px;
+      /* padding-left: 32px; */
+  }
+}
+
+/* Mobile */
 .container {
   margin: 0 auto;
   padding: 0 20px;
@@ -50,10 +76,9 @@ img {
 }
 
 /* Desktop */
-@media (min-width: 1280px) {
+@media only screen and (min-width: 1280px) {
   .container {
     margin: 0 auto;
-    padding: 0 32px;
     max-width: 1280px;
   }
 }
@@ -64,7 +89,6 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
     margin-bottom: 40px;
   }
 }
@@ -74,7 +98,6 @@ img {
   .container-paragrafs {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
     margin-bottom: 64px;
   }
 }
@@ -85,8 +108,6 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 82px;
-    margin-bottom: 64px;
   }
 }
 
@@ -115,7 +136,6 @@ img {
 /* Mobile */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .paragraf-review1 {
-    margin-top: 40px;
     margin-bottom: 24px;
     margin-left: 0;
     margin-right: 0;
@@ -131,6 +151,13 @@ img {
     letter-spacing: -1.44px;
     margin-bottom: 32px;
     max-width: 497px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+  .paragraf-review1 {
+    margin-bottom: 0;
   }
 }
 
@@ -196,7 +223,6 @@ img {
     align-items: center;
     justify-content: center;
     gap: 16px;
-    margin-bottom: 14px;
   }
 }
 
@@ -206,7 +232,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 24px 16px;
-    margin-bottom: 32px;
     justify-content: center;
   }
 }
@@ -217,7 +242,6 @@ img {
     display: flex;
     flex-direction: row;
     gap: 32px;
-    margin-bottom: 64px;
     justify-content: space-between;
   }
 }
