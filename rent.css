@@ -187,7 +187,6 @@
     position: relative;
     overflow: hidden;
     z-index: 0;
-    
   }
 
   .rent-title {
@@ -288,7 +287,6 @@
   }
 
   .rent-container{
-    width: 913px;
     margin-bottom: 164px !important;
     margin-top: 82px !important;
   }
