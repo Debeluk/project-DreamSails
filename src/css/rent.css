@@ -352,10 +352,9 @@
 .rent-spot {
   position: absolute;
   top: 400px;
-  left: 130px;
+  left: 200px;
   width: 150px;
   height: 150px;
-  transform: rotate(-44.916deg);
   border-radius: 283px;
   opacity: 0.6;
   background: #91AFBA;
