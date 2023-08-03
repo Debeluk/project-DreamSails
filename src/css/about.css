@@ -160,24 +160,21 @@
        padding-left: 335px;
     }
 }
-@media (max-width:375px)  {
-       .about-img1 {
-            width: 335px;
-            height: 524px;
-        }
+    .about-img1 {
+        width: 335px;
+        height: 524px;
+    }
     
-        .about-img2 {
-            width: 335px;
-            height: 289px;
-        }
-        .about-img3 {
-            width: 260px;
-            height: 244px;
-            position: absolute;
-            top: 250px;
-            left: 0px;
-        }
-}
+    .about-img2 {
+        width: 335px;
+        height: 289px;
+    }
+    .about-img3 {
+        width: 260px;
+        height: 244px;
+       
+    }
+
 
 @media (min-width:767px) {
     .about-img1 {
@@ -192,8 +189,9 @@
 
     .about-img3 {
         position: absolute;
-        bottom: -150px;
+        top: 825px;
         left: 340px;
+        bottom: -150px;
     }
 }
 
